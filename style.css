@@ -1,0 +1,88 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fff0f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffe4e1;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ff69b4;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.day {
+    height: 80px;
+    background-color: #fff0f5;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.day:hover {
+    background-color: #ffb6c1;
+    color: white;
+}
+
+.day.selected {
+    background-color: #ff69b4;
+    color: white;
+}
+
+.task-section input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ffb6c1;
+}
+
+.task-section button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.task {
+    background-color: #fff0f5;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: #ff69b4;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
