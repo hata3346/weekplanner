@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendrier Study Planner Cute</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📅 Mon Study Planner</h1>
+
+    <div class="calendar" id="calendar"></div>
+
+    <div class="task-section">
+        <h2>📝 Ajouter une tâche</h2>
+        <input type="text" id="task-matiere" placeholder="Matière">
+        <input type="text" id="task-name" placeholder="Tâche">
+        <input type="number" id="task-duration" placeholder="Durée (min)" min="1">
+        <button id="add-task-btn">➕ Ajouter</button>
+    </div>
+
+    <h2>Tâches du jour</h2>
+    <div id="tasks-list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
